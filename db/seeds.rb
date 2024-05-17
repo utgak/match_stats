@@ -1,7 +1,6 @@
 5.times do
   teams = FactoryBot.create_list(:team, 2, :with_players)
   match = FactoryBot.create_list(:match, 3, teams: teams)
-  achievements = FactoryBot.create_list(:achievement, 3)
 
   match.each do |m|
     3.times do 
