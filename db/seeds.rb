@@ -4,7 +4,7 @@
 
   match.each do |m|
     3.times do 
-      m.add_achievemet(name: Faker::Emotion.adjective, player: Player.order("RANDOM()").limit(1).first )
+      m.add_achievemet(name: Faker::Emotion.adjective, player: match.players.order("RANDOM()").limit(1).first )
     end
   end
 end
